@@ -501,9 +501,9 @@ if __name__ == '__main__':
     data = data.fillna(0)
     # 将空缺值填充为0
     print('开始判卷')
-    for n in range(0,2795):
+    for n in range(0,5323):
         panjuan(n)
-        print('正在判卷，第'+str(n)+'份，共2794份')
+        print('正在判卷，第'+str(n)+'份，共5323份')
     print('判卷完成')
     output = data.loc[:, :'单位']
     # 只取个人信息部分，生成另一张表。
